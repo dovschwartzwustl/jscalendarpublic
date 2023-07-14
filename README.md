@@ -1,14 +1,3 @@
-## Link to website
-http://ec2-18-224-82-197.us-east-2.compute.amazonaws.com/calendar/home.html
-
-## Log in info: 
-Username and password are the same for ease of access
- - dov
- - prince
- - lance
- - dovclone
-
-
 ## Features
  - Tags: On bottom right, while logged in, you can click "Create Tag" to create a tag with a name and a hex code color. These tags are user-specific and can't be used by other users unless a user shares an event with them. Users can type the tag name in when they create or edit an event to apply the tag. Tags are stored in the tag table in the calendar MySQL schema.
   - Share calendar: Users can share their entire calendar by clicking the share button in bottom left. They can type in the username that they want to share their calendar with. All new events added by this user as well as old events will be visible on the shared user's screen.
