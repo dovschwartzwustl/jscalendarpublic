@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 8px;
+  }
+  
+  button#prev_month_btn,
+button#next_month_btn{
+  background-color: #444ce3;
+}
+button#share_btn {
+  background-color: #4ab5a9;
+}
+button#tags_off {
+  background-color: red;
+}
+button#tags_on {
+  background-color: #4CAF50;
+}
+
+button#logout_btn {
+  background-color: #919e9d;
+}
+button#closeTag, button#closeShare {
+  background-color: red;
+}
+
+#create_tag_btns{
+  width: 150px;
+  float: right;
+  margin-right: 10px;
+}
+
+#calendar {
+  margin: 10px;
+  margin-bottom: 10px;
+  
+}
+
+  .logout_btn {
+    display: none;
+  }
+
+  .logged-out-message {
+    display: none;
+  }
+  
+  .calendar {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendar th, .calendar td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .calendar th {
+    background-color: #f2f2f2;
+  }
+  
+  .calendar td {
+    height: 100px;
+  }
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+  }
+
+  .tag-form-popup {
+    display: none;
+  }
+
+  .tag-toggle {
+    display: block;
+  }
+
+  .hidden-btn {
+    display: none;
+  }
+  
+  .form-popup input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .form-popup button[id="createEvent"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .form-popup button[id="closeEventForm"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  /*
+  #closeEventForm {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+  }

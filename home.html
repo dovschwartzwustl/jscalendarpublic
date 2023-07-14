@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="register">
+    <input type="text" id="reg-username" placeholder="Username" />
+    <input type="password" id="reg-password" placeholder="Password" />
+    <input type="password" id="reg-confirmpassword" placeholder="Confirm Password" />
+    <button id="register_btn">Register</button>
+</div>
+<div id="login-form">
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="login_btn" class="login_btn">Log In</button>
+</div>
+<div id="logout">
+    <button id="logout_btn" class="logout_btn">Log Out</button>
+</div>
+<div id="logged-in-message-div">
+    <h1 id="logged-in-message">Welcome</h1>
+</div>
+<div id="logged-out-message">
+    <h1>Logged Out</h1>
+</div>
+
+<div id="change-month">
+    <button id="prev_month_btn">&lt;Prev</button>
+    <button id="next_month_btn">Next></button>
+    
+</div>
+
+<div id="eventForm" class="form-popup">
+    <input type="text" id="eventName" placeholder="Event Name" />
+    <input type="text" id="eventDesc" placeholder="Description" />
+    <input type="text" id="eventTime" placeholder="Time (XX:XX)" />
+    <input type="text" id="eventTagName" placeholder="Tag Name" />
+    <input type="text" id="eventAddUsers" placeholder="Usernames (user1, user2)" />
+
+    <div>
+        <label for="am">AM</label>
+        <input type="radio" id="am" name="timePeriod" value="AM" checked />
+        <label for="pm">PM</label>
+        <input type="radio" id="pm" name="timePeriod" value="PM" />
+    </div>
+    <div id="createEventErrorMessage"></div>
+
+    <button id="closeEventForm">Close</button>
+    <button id="createEvent">Save</button>
+</div>
+<div id="editForm" class="form-popup">
+    <button id="deleteEvent">Delete Event</button>
+    <input type="text" id="editName" placeholder="Event Name" />
+    <input type="text" id="editDesc" placeholder="Description" />
+    <input type="text" id="editTime" placeholder="Time (XX:XX)" />
+    <input type="text" id="editTagName" placeholder="Tag Name" />
+
+    <div>
+        <label for="am">AM</label>
+        <input type="radio" id="editAm" name="editTimePeriod" value="AM" />
+        <label for="pm">PM</label>
+        <input type="radio" id="editPm" name="editTimePeriod" value="PM" />
+    </div>
+    <div id="editEventErrorMessage"></div>
+
+    <button id="closeEditForm">Close</button>
+    <button id="editEvent">Save</button>
+</div>
+
+<div id="calendar"></div>
+<div id="create_tag_btns">
+    <button id="create_tag_btn">Create Tag</button>
+    <div class="tag-toggle">
+        <button id="tags_off">Disable Tags</button>
+        <button id="tags_on" class="hidden-btn">Enable Tags</button>
+    </div>
+    
+</div>
+<div id="createTagForm" class="form-popup">
+    <h3>Create a tag to add to your events</h1>
+    <input type="text" id="tagName" placeholder="Tag Name" />
+    <input type="text" id="tagColor" placeholder="Color: (#XXXXXX)" />
+    
+    <button id="closeTag">Close</button>
+    <button id="saveTag">Save</button>
+</div>
+<button id="share_btn">Share</button>
+<div id="shareForm" class="form-popup">
+    <h3>Share your calendar with another user</h3>
+    <input type="text" id="shareUser" placeholder="Username" />
+    
+    <button id="closeShare">Close</button>
+    <button id="saveShare">Save</button>
+</div>
+<script type="text/javascript" src="calendar.js"></script>
+<script type="text/javascript" src="process-login.js"></script>
+<script type="text/javascript" src="process-logout.js"></script>
+<script type="text/javascript" src="process-register.js"></script>
+<script type="text/javascript" src="generateCalendar.js"></script>
+<script type="text/javascript" src="tag.js"></script>
+<script type="text/javascript" src="share.js"></script>
+</body>
+
+
+
+</html>
